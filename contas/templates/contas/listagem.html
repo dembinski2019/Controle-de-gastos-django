@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem de Lançamentos</title>
+</head>
+<body>
+<main>
+    <header>
+        <h1>Lançamentos</h1>
+    </header>
+    <p>
+        <ul>
+            {% for transacao in trasacoes%}
+
+                <li> {{transacao.date}} - {{ transacao.descricao }} - {{transacao.valor}} - {{transacao.categoria}}</li>
+
+            {% endfor %}
+            
+            <a href="{% url 'url_nova' %} ">Novo</a>
+         </ul>
+    </p>
+
+</main>
+</body>
+</html>

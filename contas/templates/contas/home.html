@@ -4,22 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <style type="text/css"> 
-        html{
-            width: 900px; background-color: rgb(165, 216, 216);
-        }
+    <style type="text/css">
+    html{
+    background-color: rgb(177, 221, 221);
+}   
+    main{
+        width: 900px; margin:-10px auto 10px; border:1px solid black ; 
+        background-color: rgb(255, 255, 255);  
+        padding-top: -10px; height: 1000px;
+    }
+    header{
+        width: 900px; height: 280px; background-color: rgb(218, 218, 245); margin-top: -20px;
+    }
+    hgroup{
+        padding: 15px;
+    }
+    header p{
+        float: right;
+    }
+    article{
+        width: 540px; padding: 10px; text-align: justify;float: left ;
+    }
+    img{
+        width: 300px; height: 260px;padding: 10px ;
+    }
+    footer{
+        text-align: center;
+    }
     </style>
+   
+
 </head>
 <body>
     <main>
+
         <header>
-            <H1>Bem Vindo</H1>
+            <hgroup>
+                <br>
+            <h4> Bem vindo</h4>
+            <h1 style="text-align: center;">Sistema de Gerenciamento de Gastos</h1>
+            <br>
+            <h3>Projeto desenvolvido no curso de Djando 2.0</h3>
+            <p>{{ now }}</p>
+            </hgroup>
         </header>
         
         <article>
-            <p>Agora são: {{ now }}</p>
-
+            <p>Aprenda de vez os conceitos fundamentais deste incrível framework. Veja desde os conceitos de request, ate criação do projeto, estrutura, apps, models, forms, views, urls e muito mais. Veja por que o Django é o maior e melhor framework de desenvolvimento web ágil da atualidade.</p>
+            
         </article>
+
+        <img alt="django" title="Django" src="/contas/media/img_django.png">
+        
+        <hr style="width: 700px; margin: 1px auto 10px;">
+        
+        <footer>Prduzido por Everton Dembinski</footer>
+
 
 
     </main>
